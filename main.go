@@ -8,8 +8,7 @@ import (
 
 func main() {
 	s := "Hello world"
-	fmt.Println(s)
-	healthFile, err := os.Create("/healthcheck")
+	healthFile, err := os.Create("/tmp/healthy")
 	if err != nil {
 		panic(err)
 	}
@@ -17,6 +16,8 @@ func main() {
 	if err = healthFile.Close(); err != nil {
 		panic(err)
 	}
+
+	fmt.Println(s)
 
 	time.Sleep(time.Minute * 5)
 }
