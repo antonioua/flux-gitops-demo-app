@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	s := "Hello world"
+	s := "Hello world2"
 	healthFile, err := os.Create("/tmp/healthy")
 	if err != nil {
 		panic(err)
