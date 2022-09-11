@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	s := "Hello world2"
+	s := "Hello world"
 	healthFile, err := os.Create("/tmp/healthy")
 	if err != nil {
 		panic(err)
@@ -18,6 +18,5 @@ func main() {
 	}
 
 	fmt.Println(s)
-
-	time.Sleep(time.Minute * 5)
+	time.Sleep(time.Minute * 60)
 }
