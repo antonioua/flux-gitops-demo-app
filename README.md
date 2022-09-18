@@ -1,3 +1,2 @@
 # gitops-demo-app
 
-
