@@ -17,7 +17,6 @@ func main() {
 		panic(err)
 	}
 
-	fmt.Println("Hi")
 	fmt.Println(s)
 	time.Sleep(time.Minute * 60)
 }
